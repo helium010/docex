@@ -1,0 +1,2 @@
+-   Clean unreferenced res files
+-   Move PDF parsing from online to offline to improve performance

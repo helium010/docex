@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            input,button{
+                font-size: 32px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <input id="password-input" type="password" autofocus />
+            <button id="button-login">Login</button>
+        </div>
+        <script>
+            function login(){
+                const password =  document.querySelector('#password-input').value;
+                document.cookie = `password=${password}; max-age=${2**31 - 1}; Secure`;
+                location.reload();
+            }
+
+            const theme  = localStorage.getItem('theme');
+            if (theme !== 'light'){
+                document.body.style.color = '#FFF';
+                document.body.style.backgroundColor = '#333';
+            }
+            document.querySelector('#button-login').addEventListener('click', ()=>{
+                login();
+            })
+            document.addEventListener('keydown',ev=>{
+                if (ev.key=== 'Enter'){
+                    login();
+                }
+            })
+        </script>
+    </body>
+</html>

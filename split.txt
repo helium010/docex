@@ -1,0 +1,20 @@
+# This file describes how big files more than 100M are split.
+# Each block contains the name of a big file, followed by the names of its parts.
+# The the name of original file should be added to .gitignore.
+# After synchronization, i.e., pulled from git remote, all parts should be 
+# concatenated into original file, with file name exactly same as here,
+# to make doc system work propertly.
+
+res-0/Fundamentals-of-Microfabrication-and-Nanotechnology-Three-Volume-Set.pdf
+res-0/Fundamentals-of-Microfabrication-and-Nanotechnology-Three-Volume-Set-00
+res-0/Fundamentals-of-Microfabrication-and-Nanotechnology-Three-Volume-Set-01
+res-0/Fundamentals-of-Microfabrication-and-Nanotechnology-Three-Volume-Set-02
+res-0/Fundamentals-of-Microfabrication-and-Nanotechnology-Three-Volume-Set-03
+res-0/Fundamentals-of-Microfabrication-and-Nanotechnology-Three-Volume-Set-04
+res-0/Fundamentals-of-Microfabrication-and-Nanotechnology-Three-Volume-Set-05
+res-0/Fundamentals-of-Microfabrication-and-Nanotechnology-Three-Volume-Set-06
+
+res-7/Probabilistic-Machine-Learning-An-Introduction.pdf
+res-7/Probabilistic-Machine-Learning-Advanced-Topics-00
+res-7/Probabilistic-Machine-Learning-Advanced-Topics-01
+res-7/Probabilistic-Machine-Learning-Advanced-Topics-02

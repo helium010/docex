@@ -1,0 +1,42 @@
+{
+    "ez code": {
+        "prefix": "code",
+        "body": "<code class=\"ez-code\">$0</code>"
+    },
+    "ez type": {
+        "prefix": "type",
+        "body": "<span class=\"ez-type\">$1</span>$0"
+    },
+    "ez prop": {
+        "prefix": "prop",
+        "body": "<span class=\"ez-prop\">$1</span>$0"
+    },
+    "ez func": {
+        "prefix": "func",
+        "body": "<span class=\"ez-func\">$1</span>$0"
+    },
+    "ez variable": {
+        "prefix": "variable",
+        "body": "<span class=\"ez-variable\">$1</span>$0"
+    },
+    "ez suggested": {
+        "prefix": "suggested",
+        "body": "<code class=\"ez-code\"><span class=\"ez-suggested\">$1</span></code>"
+    },
+    "begin": {
+        "prefix": "begin",
+        "body": ["\\begin{${1:aligned}}", "    $0", "\\end{${1:aligned}}"]
+    },
+    "reference": {
+        "prefix": "reference",
+        "body": "[Reference]($1)$0"
+    },
+    "boldsymbol": {
+        "prefix": "bs",
+        "body": "\\boldsymbol "
+    },
+    "img": {
+        "prefix": "img",
+        "body": ["<div style=\"display:flex;justify-content:space-around\">", "<img style=\"width:30%\" src=\"$1\"/>", "</div>"]
+    }
+}
